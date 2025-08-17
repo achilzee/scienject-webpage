@@ -9,12 +9,12 @@
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background-image: "meowbal.png";
+      background-color: #0A1033;
       color: white;
       padding: 1rem;
     }
     nav {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       display: flex;
       flex-wrap: wrap;
       background-image: url('https://drive.google.com/file/d/1TFhApJ8iOxXlfBVBlpOs3ibAuqzl29I4/view?usp=sharing');
@@ -27,6 +27,7 @@
       margin-bottom: 2rem;
     }
     nav ul {
+      font-family: 'Orbitron', sans-serif;
       list-style: none;
       display: flex;
       gap: 1.5rem;
@@ -41,7 +42,7 @@
       color: #FF2C85;
     }
     h1 span:first-child {
-      color: #1ECEC0;
+      color: #009796
     }
     h1 span:nth-child(2), h1 span:nth-child(3) {
       color: #FF2C85;
@@ -151,7 +152,7 @@
       }
     }
     .mobile-btn {
-  background-color: #1ECEC0;
+  background-color: #009796
   border: none;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -169,30 +170,64 @@
 
   <nav>
     <div style="display: flex; align-items: center; gap: 1rem">
-      <img src="Untitled design (4)-fotor-bg-remover-20250720191334.png" alt="Scienject Logo" width="120" height="120">
-      <h1 style="background: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem;">SCIENJECT 5.0</h1>
+    <img src="https://i.ibb.co/7xb47n5R/Untitled-design-4-fotor-bg-remover-20250720191334.png" alt="Scienject Logo" width="120" height="120">
+    <img src="https://i.ibb.co/ynFT9Fb8/Lahore-Grammar-School-logo.png" alt="Lahore-Grammar-School-logo" width="90" height="90">
+      
     </div>
-    <ul>
-      <li><a href="#home" style="font-weight: bold; font-size: 20px; background: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem;">Home</a></li>
-      <li><a href="#categories" style="font-weight: bold; font-size: 20px; background: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem;">Categories</a></li>
-      <li><a href="#contact" style="font-weight: bold; font-size: 20px; background: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem;">Contact</a></li>
-    </ul>
+   <ul>
+ 
+  <li>
+    <button onclick="location.href='#categories'" 
+      style="font-weight: bold; font-size: 20px; background-color: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem; cursor: pointer; border: none;font-family: 'Orbitron', sans-serif;"
+      onmouseover="this.style.color='#FF2C8'" 
+      onmouseout="this.style.color='white'">
+      Categories
+    </button>
+  </li>
+  <li>
+    <button onclick="location.href='#contact'" 
+      style="font-weight: bold; font-size: 20px; background-color: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem; cursor: pointer; border: none;font-family: 'Orbitron', sans-serif;"
+      onmouseover="this.style.color='#FF2C8'" 
+      onmouseout="this.style.color='white'">
+      Contact
+    </button>
+  </li>
+  <li>
+    <button onclick="location.href='#game'" 
+      style="font-weight: bold; font-size: 20px; background-color: black; color: white; border-radius: 0.5rem; padding: 0.25rem 0.75rem; cursor: pointer; border: none;font-family: 'Orbitron', sans-serif;"
+      onmouseover="this.style.color='#FF2C8'" 
+      onmouseout="this.style.color='white'">
+      Play Game
+    </button>
+  </li>
+  <li>
+    <button id="themeToggleBtn" onclick="toggleTheme()" 
+      style="font-size: 1.5rem; padding: 0.5rem 1rem; background-color: rgb(12, 12, 12); border-radius: 0.5rem; cursor: pointer; border: none; color: white;"
+      onmouseover="this.style.color='#FF2C8'" 
+      onmouseout="this.style.color='white'">
+      🌙
+    </button>
+  </li>
+</ul>
+
   </nav>
 
   <section id="home" style="text-align: center;">
-    <h1 style="font-size: 50px;"><span>SCIEN</span><span>JECT</span><span> 5.0</span></h1>
-    <p style="font-size: 30px"> An Inter-School Science Competition</p>
+    <h1 style="font-size: 80px;"><span>SCIEN</span><span>JECT</span><span> 5.0</span></h1>
+    <p style="font-size: 30px"> LGS Gulberg's Flagship Event </p>
   </section>
 
-  <section style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
-  
+  <section style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center; margin-bottom: 2rem;"> 
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="color: #FF2C85;">About Scienject</h2>
+      <p style="font-size: 20px; line-height: 1.5;">
+        Scienject is an inter-school science competition that brings together students from various schools to showcase their talents in science, technology, engineering, and mathematics (STEM). This year, Scienject 5.0 promises to be bigger and better than ever, with exciting new categories and challenges that will test the skills and creativity of participants.
+      </p>
+      <p style="font-size: 20px; line-height: 1.5;">
+        Whether you're a budding scientist, an aspiring engineer, or just someone who loves to explore the wonders of the universe, Scienject 5.0 has something for everyone. Join us for a day filled with innovation, discovery, and fun as we celebrate the spirit of science and technology.      
+      </p>
     <div>
-      <h2 style="color: #FF2C85;">Why Join?</h2>
-      <ul>
-        <li>Compete in exciting STEM categories</li>
-        <li>Win awards and recognition</li>
-        <li>Meet like-minded students</li>
-        <li>Why not Lmao</li>
+      
       </ul>
       <button class="button" onclick="window.open('https://forms.gle/rDqozSgw3ksjhLoS8', '_blank')">Register Now</button>
     </div>
@@ -222,7 +257,7 @@
 
   <section id="game">
   <h2 style="text-align:center; color:#FF2C85;">Play Space Invaders (a possible hint for a certain category)</h2>
-  <h3 id="scoreDisplay" style="color: #1ECEC0; text-align: center; font-size: 24px;">Score: 0</h3>
+  <h3 id="scoreDisplay" style="color: #009796 text-align: center; font-size: 24px;">Score: 0</h3>
 
   <canvas id="gameCanvas" width="500" height="500" style="background: black; display: block; margin: auto;"></canvas>
   <div id="mobile-controls" style="display: flex; justify-content: center; gap: 1rem; margin: 1rem auto;">
@@ -383,24 +418,6 @@ if (rightPressed) player.x += player.dx;
   
 </script>
 
-<section id="instructions" style="text-align: center; margin: 2rem 0;">
-  <h2 style="color: #FF2C85;">How to Play Space Invaders</h2>
-  <p style="font-size: 18px; max-width: 600px; margin: auto;">
-    Defend your base from alien invaders! Use your reflexes and precision to eliminate all enemies before they reach you.
-  </p>
-  <ul style="list-style: none; padding: 0; font-size: 18px; margin-top: 1rem;">
-    <li>🔹 <strong>Move Left:</strong> Press the <code>← Left Arrow</code> key</li>
-    <li>🔹 <strong>Move Right:</strong> Press the <code>→ Right Arrow</code> key</li>
-    <li>🔹 <strong>Shoot:</strong> Press the <code>Spacebar</code> to fire bullets</li>
-  </ul>
-  <p style="margin-top: 1rem; font-size: 18px;">
-    🎯 Eliminate all alien ships to win! Good luck, Commander!
-  </p>
-</section>
-
-</section>
-
-
 <section id="contact" style="text-align: center;">
   <h3 style="color:#FF2C85;">Send us a Message</h3>
   <p>Have questions or suggestions? We'd love to hear from you!</p>
@@ -417,30 +434,27 @@ if (rightPressed) player.x += player.dx;
  
 
   <footer>
-    <p style="font-size: 20px; color:#FF2C85;">Contact Us</p>
-    <p>
+    <p style="font-size: 20px; color:#FF2C85; text-align: left;">Contact Us</p>
+    <p style="font-size: 16px; text-align: left;">
       Email:
       <a href="mailto:scienject5.0@gmail.com?subject=Contact%20Scienject" style="color:#FF2C85; text-decoration: underline;">
         scienject5.0@gmail.com
       </a>
     </p>
-    <p>
+    <p style="font-size: 16px; text-align: left;">
       Instagram: 
       <a href="https://instagram.com/scienject_5.0" target="_blank" style="color:#FF2C85; text-decoration: underline;">
       @scienject_5.0
       </a>
     </p>
     <br>
-    <p style="font-size: 20px; color:#FF2C85;">Event Heads</p>
-    <p style="font-size: 16px;">Aqil Zia Kayani | +92 300 0630282</p>
-    <p style="font-size: 16px;">Muhammad Salar Hussain | +92 347 4002941</p>
-    <p style="font-size: 0.75rem; opacity: 0.6">&copy; 2025 Scienject. </p>
+
+    <p style="font-size: 20px; text-align:left; color:#FF2C85;"> Event Heads</p>
+    <p style="font-size: 16px; text-align:left;">Aqil Zia Kayani | +92 300 0630282</p>
+    <p style="font-size: 16px; text-align:left;">Muhammad Salar Hussain | +92 347 400294 </p>
+    <p style="font-size: 0.75rem; opacity: 0.6 text-align:left;">&copy; 2025 Scienject. </p>
  
 
-   <section style="text-align: center;">
-    <h3 style="color: #FF2C85;">Toggle Theme</h3>
-    <button class="button" onclick="toggleTheme()">Light / Dark Mode</button>
-  </section>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -470,11 +484,14 @@ if (rightPressed) player.x += player.dx;
       body.style.backgroundColor = '#0A1033';
       body.style.color = 'white';
       body.dataset.theme = "dark";
+      document.getElementById('themeToggleBtn').innerHTML = '☀️';
     } else {
       body.style.backgroundColor = 'lightblue';
       body.style.color = 'black';
       body.dataset.theme = "light";
+      document.getElementById('themeToggleBtn').innerHTML = '🌙';
     }
+  }
   }
 </script>
 
